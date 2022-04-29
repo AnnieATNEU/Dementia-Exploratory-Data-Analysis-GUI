@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1856</width>
+    <height>970</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="Greenframebehind">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>4</y>
+      <width>1841</width>
+      <height>941</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(16, 79, 127);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frameBehindplotWidget">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>3</y>
+       <width>1822</width>
+       <height>911</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(199, 240, 248);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="TitleLabel">
+      <property name="geometry">
+       <rect>
+        <x>816</x>
+        <y>20</y>
+        <width>391</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 700 11pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(58, 115, 173);
+border radius: 12px;</string>
+      </property>
+      <property name="text">
+       <string>       Dementia Exploratory Data Analysis</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="plotWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>191</y>
+        <width>1591</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QWidget#plotWidget{border-radius: 6px;
+	background-color: rgb(247, 255, 251);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+	font: 10pt &quot;Segoe UI&quot;;
+;}
+
+
+QWidget:hover#plotWidget
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1591</width>
+         <height>611</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="behindTitleLabel1_2">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>10</y>
+        <width>421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(16, 79, 127);
+border radius: 12px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="uploadcsvButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#uploadcsvButton{border-radius: 12px;
+	background-color: rgb(247, 255, 251);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+	font: 10pt &quot;Segoe UI&quot;;
+;}
+
+
+QPushButton:hover#uploadcsvButton
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Upload csv</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../../../Desktop/Capstone/gveoII/imagesicons/images icons.qrc">
+        <normaloff>:/imagesicons/addIcon.ico</normaloff>:/imagesicons/addIcon.ico</iconset>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frameBehindplotWidget2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>180</y>
+        <width>1611</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frameBehindplotWidget2{border-radius: 6px;
+	background-color: rgb(16, 79, 127);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+	font: 10pt &quot;Segoe UI&quot;;
+;}
+
+
+QFrame:hover#frameBehindplotWidget2
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="NumberofPatients">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>90</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#NumberofPatients{border-radius: 12px;
+	background-color: rgb(155, 232, 255);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+
+	font: 700 9pt &quot;Segoe UI&quot;;
+;}
+
+
+QPushButton:hover#NumberofPatients
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Number of patients</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="correlationMatrixbutton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>90</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#correlationMatrixbutton{border-radius: 12px;
+	
+	border-color: rgb(85, 170, 255);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+	font: 700 9pt &quot;Segoe UI&quot;;
+;}
+
+
+QPushButton:hover#correlationMatrixbutton
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Correlation matrix</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="viewAgeplot">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>90</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#viewAgeplot{border-radius: 12px;
+	background-color: rgb(62, 197, 255);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+	font: 700 9pt &quot;Segoe UI&quot;;
+;}
+
+
+QPushButton:hover#viewAgeplot
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>View Age plot</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="plotMMSE">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>130</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#plotMMSE{border-radius: 12px;
+	font: 700 9pt &quot;Segoe UI&quot;;
+	background-color: rgb(0, 170, 255);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+
+;}
+
+
+QPushButton:hover#plotMMSE
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Plot MMSE</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="viewGroupPlot">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>130</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QComboBox#viewGroupPlot{border-radius: 12px;
+	
+	border-color: rgb(85, 170, 255);
+border-style:outset;
+border-width:2px;
+	background-color: rgb(158, 213, 255);
+border-color:rgb(16, 79, 127);
+	font: 700 9pt &quot;Segoe UI&quot;;
+;}
+
+
+QComboBox:hover#viewGroupPlot
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="currentText">
+       <string>     View Dataframe</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>     View Dataframe</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>820</y>
+        <width>1611</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 59, 177);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>825</y>
+        <width>1591</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(222, 241, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="comparisonresultButton">
+      <property name="geometry">
+       <rect>
+        <x>1240</x>
+        <y>130</y>
+        <width>371</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QPushButton#comparisonresultButton{border-radius: 12px;
+	
+	border-color: rgb(85, 170, 255);
+border-style:outset;
+border-width:2px;
+border-color:rgb(16, 79, 127);
+	font: 700 9pt &quot;Segoe UI&quot;;
+;}
+
+
+QPushButton:hover#comparisonresultButton
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Comparison Result (Machine Learning used)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="preprocessingFrame">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>601</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QLabel#preprocessingFrame{border-radius: 12px;
+	background-color: rgb(247, 255, 251);
+border-style:outset;
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+
+	font: 10pt &quot;Segoe UI&quot;;
+;}
+
+
+QLabel:hover#preprocessingFrame
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="midLineWidth">
+       <number>-1</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dataprocessingLabel">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>56</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Segoe UI&quot;;
+text-decoration: underline;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);
+border radius: 12px;
+background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 127);</string>
+      </property>
+      <property name="text">
+       <string>       DATA PREPROCESSING           </string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="viewGroupPlot_2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>130</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QComboBox#viewGroupPlot_2{border-radius: 12px;
+	
+	border-color: rgb(85, 170, 255);
+border-style:outset;
+border-width:2px;
+	background-color: rgb(158, 213, 255);
+border-color:rgb(16, 79, 127);
+	font: 700 9pt &quot;Segoe UI&quot;;
+;}
+
+
+QComboBox:hover#viewGroupPlot_2
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="currentText">
+       <string>   View Group plot</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>   View Group plot</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="machineLearningcomboBox">
+      <property name="geometry">
+       <rect>
+        <x>1240</x>
+        <y>90</y>
+        <width>371</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+QComboBox#machineLearningcomboBox{border-radius: 12px;
+	
+	border-color: rgb(85, 170, 255);
+border-style:outset;
+border-width:2px;
+	background-color: rgb(158, 213, 255);
+border-color:rgb(16, 79, 127);
+		font: 700 9pt &quot;Segoe UI&quot;;
+;}
+
+
+QComboBox:hover#machineLearningcomboBox
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="currentText">
+       <string>  Select Machine Learning</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>  Select Machine Learning</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SVC- Support Vector Machine</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Decision Tree Model</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AdaBoost Model</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Random Forest</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>XGBClassifier</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="machinelearningLabel">
+      <property name="geometry">
+       <rect>
+        <x>1430</x>
+        <y>56</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Segoe UI&quot;;
+text-decoration: underline;
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);
+border radius: 12px;
+background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 127);</string>
+      </property>
+      <property name="text">
+       <string>          MACHINE LEARNING        </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="machineLearningFrame">
+      <property name="geometry">
+       <rect>
+        <x>1200</x>
+        <y>80</y>
+        <width>601</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#machineLearningFrame{border-radius: 12px;
+	background-color: rgb(171, 197, 229);
+border-style:outset;
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+
+	font: 10pt &quot;Segoe UI&quot;;
+;}
+
+
+QLabel:hover#machineLearningFrame
+{
+border-width:2px;
+	border-color: rgb(84, 204, 255);
+}
+</string>
+      </property>
+      <property name="midLineWidth">
+       <number>-1</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>preprocessingFrame</zorder>
+     <zorder>frameBehindplotWidget2</zorder>
+     <zorder>behindTitleLabel1_2</zorder>
+     <zorder>TitleLabel</zorder>
+     <zorder>plotWidget</zorder>
+     <zorder>uploadcsvButton</zorder>
+     <zorder>NumberofPatients</zorder>
+     <zorder>correlationMatrixbutton</zorder>
+     <zorder>viewAgeplot</zorder>
+     <zorder>plotMMSE</zorder>
+     <zorder>viewGroupPlot</zorder>
+     <zorder>textEdit</zorder>
+     <zorder>label</zorder>
+     <zorder>dataprocessingLabel</zorder>
+     <zorder>viewGroupPlot_2</zorder>
+     <zorder>machinelearningLabel</zorder>
+     <zorder>machineLearningFrame</zorder>
+     <zorder>machineLearningcomboBox</zorder>
+     <zorder>comparisonresultButton</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1856</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../../../../Desktop/Capstone/gveoII/images icons.qrc"/>
+  <include location="../../../../Desktop/Capstone/gveoII/imagesicons/images icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,8 @@
+============================
+CONVERT UI TO PYTHON FILE
+find path in windows explorer
+then type cmd in the path and enter to open that path in command prompt
+cd C:\Users\a_ade\Desktop\create_emoji\emoji1\.venv\Scripts\.venv\Scripts
+
+then type and drag the paths and output u want:
+pyuic5.exe -x "dementia.ui" -o "dementia.py"
